@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رأي الزائر في الموقع</title>
+</head>
+<body>  
+   
+    <div>
+        <a href="#home" style="margin-left: 15px;">الرئيسية</a>
+        <a href="#about" style="margin-left: 15px;">عن الموقع</a>
+        <a href="#services" style="margin-left: 15px;">خدماتنا</a>
+        <a href="#contact" style="margin-left: 15px;">تواصل معنا</a>
+    </div>
+    
+    <h1>مرحبا بك في الموقع</h1>
+    <hr><br>
+    <div>
+        <form>
+            <fieldset>
+                <legend><b>التقييم</b></legend>
+                <table>
+                    <tr> 
+                        <td><label><b>الإسم:</b></label></td>
+                        <td><input type="text" id="pre" placeholder="أدخل إسمك"> </td>
+                    </tr>
+                    <tr>
+                        <td><label><b>اللقب:</b></label></td>
+                        <td><input type="text" id="nom" placeholder="أدخل اللقب"> </td>
+                    </tr>
+                    <tr>
+                        <td><label><b>تاريخ الميلاد:</b></label></td>
+                        <td><input type="date" id="dn"></td>
+                    </tr>
+                    <tr>
+                        <td><b>الجنس:</b></td>
+                        <td>
+                            ذكر <input type="radio" checked name="g1" value="1"> 
+                            أنثى <input type="radio" name="g1" value="2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label><b>البريد الإلكتروني:</b></label></td>
+                        <td><input type="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label>الولاية:</label></td>
+                        <td>
+                            <select name="gov" id="gov">
+                                <option value="Tunis">إختر ولايتك</option>
+                                <option value="Tunis">تونس </option>
+                                <option value="Tunis">بنزرت </option>
+                                <option value="Tunis">أريانة </option>
+                                <option value="Tunis">بن عروس </option>
+                                <option value="Tunis">منوبة </option>
+                                <option value="Tunis">نابل </option>
+                                <option value="Tunis">زغوان </option>
+                                <option value="Tunis">سليانة </option>
+                                <option value="Tunis">باجة </option>
+                                <option value="Tunis">جندوبة </option>
+                                <option value="Tunis">القصرين </option>
+                                <option value="Tunis">الكاف </option>
+                                <option value="Tunis">سوسة </option>
+                                <option value="Tunis">المنستير </option>
+                                <option value="Tunis">المهدية </option>
+                                <option value="Tunis">صفاقس </option>
+                                <option value="Tunis">القيروان </option>
+                                <option value="Tunis">سيدي بوزيد </option>
+                                <option value="Tunis">قابس </option>
+                                <option value="Tunis">قفصة </option>
+                                <option value="Tunis">مدنين </option>
+                                <option value="Tunis">قبلي </option>                      
+                                <option value="Tunis">توزر </option>
+                                <option value="Tunis">تطاوين </option>                                         
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="button" value="تأكيد" class='bt' onclick="verif()">
+                            <input type="reset" class="bt" value="إلغاء">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>رأيك في الموقع:</legend>
+                <textarea placeholder="Votre Message" id="textarea"></textarea>
+            </fieldset>
+            <label>
+                <input type="submit" value="إرسال">
+                <input type="reset" value="إعادة">
+            </label>
+        </form>
+        <br>
+        <label for="evolution">التقييم :</label>
+        <select id="evolution" name="evolution">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </div>
+</body>
+</html>
